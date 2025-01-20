@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="../css/style.css">
     <head>
+        <script src="../javascript/ville.js"></script>
         <meta charset="UTF-8">
     </head>
-    <body>
-        <h2>Niort</h2>
-        <p>12°, pluvieux</p>
-        <img src="../image/pluvieux.png" width="5%"/>
-    +</body>
+    <body id="body" onload="afficheVille()">
+        <header class="title">
+            <h1>TD n°1 Programmation Web - Application météo</h1>
+        </header>
+        <select id="choixVille" onchange="afficheVille()">
+            <option value="Niort">Niort</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Reykjavik">Reykjavik</option>
+        </select>
+        <div class="temps">
+            <div id="Niort" class="ville">
+                <h2>Niort</h2>
+                <p>12°, pluvieux</p>
+                <img src="../img/pluvieux.png" width="5%"/>
+            </div>
+            <div id="Rio de Janeiro" class="ville">
+                <h2>Rio de Janeiro</h2>
+                <p>29°, orageux</p>
+                <img src="../img/orageux.png" width="5%"/>
+            </div>
+            <div id="Reykjavik" class="ville">
+                <h2>Reykjavik</h2>
+                <p>-10°, ensoleillé</p>
+                <img src="../img/ensoleille.png" width="5%"/>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>François Garnier</p>
+        <p>Icônes météo par <a href="https://www.example.com">The Noum Project</a></p>
+    </footer>
 </html>

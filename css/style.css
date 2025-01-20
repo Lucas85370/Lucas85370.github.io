@@ -1,0 +1,43 @@
+/*
+** IUT PROJECT, 2023
+** VCOD S4
+** File description:
+** style.css
+*/
+
+header {
+    background-color: black;
+    text-align: center;
+    text-decoration-color: white;
+    color:white;
+}
+
+.temps {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgrey;
+    color: black;
+}
+.temps div {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gainsboro;
+}   
+
+.ville p,h2,img {
+    display:flex;
+    margin: 10px 10px 10px 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ville  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    background-color: lightgrey;
+    color: black;
+}
